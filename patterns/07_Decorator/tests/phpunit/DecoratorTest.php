@@ -17,8 +17,6 @@ class DecoratorTest extends TestCase
 
     public function testDecoratorPatternClassesArrangedCorrectly()
     {
-        $this->markTestSkipped('Decorator Pattern not implemented yet');
-
         // ARRANGE
         $dataGetter = $this->dataGetterBuilder->buildDecoratorPatternObjectGraph();
 
