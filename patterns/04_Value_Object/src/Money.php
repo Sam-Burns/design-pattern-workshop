@@ -10,6 +10,15 @@ class Money
     private $currencySymbol;
 
     /**
+     * @param float $floatValue
+     * @param string $currencySymbol
+     */
+    public function __construct($floatValue, $currencySymbol)
+    {
+        // @todo
+    }
+
+    /**
      * @param string $moneyAsString
      * @return Money
      */

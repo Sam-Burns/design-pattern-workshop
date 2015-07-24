@@ -8,6 +8,8 @@ class ValueObjectTest extends TestCase
 {
     public function testConstructionFromString()
     {
+        $this->markTestSkipped('Value Object not implemented yet');
+
         // ARRANGE
         $expectedFloatValue = 2.99;
         $expectedCurrencySymbol = '£';
@@ -23,6 +25,8 @@ class ValueObjectTest extends TestCase
 
     public function testConstructionFromFloatValueInPounds()
     {
+        $this->markTestSkipped('Value Object not implemented yet');
+
         // ARRANGE
         $expectedFloatValue = 2.99;
         $expectedCurrencySymbol = '£';
@@ -38,6 +42,8 @@ class ValueObjectTest extends TestCase
 
     public function testToString()
     {
+        $this->markTestSkipped('Value Object not implemented yet');
+
         // ARRANGE
         $money = Money::constructFromFloatValueInPounds(2.99001);
 
@@ -50,6 +56,8 @@ class ValueObjectTest extends TestCase
 
     public function testWithVatAdded()
     {
+        $this->markTestSkipped('Value Object not implemented yet');
+
         $money = Money::constructFromFloatValueInPounds(10.0);
 
         $moneyPlusVat = $money->withVatAdded();
