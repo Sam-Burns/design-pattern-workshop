@@ -4,6 +4,7 @@
         <testsuite name="All">
             <directory>./patterns/01_Factory/tests/phpunit/</directory>
             <directory>./patterns/02_Builder/tests/phpunit/</directory>
+            <directory>./patterns/03_Dependency_Injection/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
