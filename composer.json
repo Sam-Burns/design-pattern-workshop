@@ -13,7 +13,7 @@
             "DesignPatterns\\Builder\\":             "patterns/02_Builder/src",
             "DesignPatterns\\DependencyInjection\\": "patterns/03_Dependency_Injection/src",
             "DesignPatterns\\ValueObject\\":         "patterns/04_Value_Object/src",
-            "DesignPatterns\\NamedConstructor\\":    "patterns/05_Named_Constructor/src",
+            "DesignPatterns\\NamedConstructor\\":    "patterns/05_Named_Constructors/src",
             "DesignPatterns\\Immutability\\":        "patterns/06_Immutability/src"
         }
     }

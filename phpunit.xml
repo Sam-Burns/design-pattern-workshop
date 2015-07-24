@@ -6,6 +6,8 @@
             <directory>./patterns/02_Builder/tests/phpunit/</directory>
             <directory>./patterns/03_Dependency_Injection/tests/phpunit/</directory>
             <directory>./patterns/04_Value_Object/tests/phpunit/</directory>
+            <directory>./patterns/05_Named_Constructors/tests/phpunit/</directory>
+            <directory>./patterns/06_Immutability/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
