@@ -1,0 +1,9 @@
+<phpunit convertErrorsToExceptions="true" colors="true">
+
+    <testsuites>
+        <testsuite name="All">
+            <directory>./patterns/01_Factory/tests/phpunit/</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
