@@ -1,7 +1,7 @@
 <?php
 namespace DesignPatterns\Immutability\Test;
 
-use DesignPatterns\NamedConstructor\Money;
+use DesignPatterns\Immutability\Money;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class ImmutabilityTest extends TestCase
