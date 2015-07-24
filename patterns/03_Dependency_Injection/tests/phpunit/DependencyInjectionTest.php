@@ -2,9 +2,12 @@
 namespace DesignPatterns\DependencyInjection\Test;
 
 use PHPUnit_Framework_TestCase as TestCase;
+use PHPUnit_Framework_MockObject_MockObject as Mock;
+use DesignPatterns\DependencyInjection\DependencyWithNastySideEffects;
 
 class DependencyInjectionTest extends TestCase
 {
+    /** @var DependencyWithNastySideEffects|Mock */
     private $mockDependency;
 
     public function setUp()

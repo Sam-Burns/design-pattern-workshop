@@ -1,5 +1,8 @@
 <?php
-namespace DesignPatterns\DependencyInjection;
+namespace DesignPatterns\DependencyInjection\DependencyManagementApproach;
+
+use DesignPatterns\DependencyInjection\DependencyWithNastySideEffects;
+use DesignPatterns\DependencyInjection\DependencyManagementApproach;
 
 class InlineInstantiation implements DependencyManagementApproach
 {
