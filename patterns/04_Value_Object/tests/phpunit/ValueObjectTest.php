@@ -6,63 +6,44 @@ use PHPUnit_Framework_TestCase as TestCase;
 
 class ValueObjectTest extends TestCase
 {
-    public function testConstructionFromString()
+    /** @var Money */
+    private $amountOfMoney;
+
+    public function setUp()
     {
-        $this->markTestSkipped('Value Object not implemented yet');
-
-        // ARRANGE
-        $expectedFloatValue = 2.99;
-        $expectedCurrencySymbol = '£';
-
-        // ACT
-        $result = Money::constructFromString('£2.99');
-
-        // ASSERT
-        $this->assertInstanceOf('\DesignPatterns\ValueObject\Money', $result);
-        $this->assertEquals($expectedFloatValue, $result->getFloatValue());
-        $this->assertEquals($expectedCurrencySymbol, $result->getCurrencySymbol());
+        $this->amountOfMoney = new Money(2.99, '£');
     }
 
-    public function testConstructionFromFloatValueInPounds()
+    public function testGetCurrencySymbol()
     {
         $this->markTestSkipped('Value Object not implemented yet');
 
-        // ARRANGE
-        $expectedFloatValue = 2.99;
-        $expectedCurrencySymbol = '£';
-
         // ACT
-        $result = Money::constructFromFloatValueInPounds(2.99);
+        $result = $this->amountOfMoney->getCurrencySymbol();
 
         // ASSERT
-        $this->assertInstanceOf('\DesignPatterns\ValueObject\Money', $result);
-        $this->assertEquals($expectedFloatValue, $result->getFloatValue());
-        $this->assertEquals($expectedCurrencySymbol, $result->getCurrencySymbol());
+        $this->assertEquals('£', $result);
+    }
+
+    public function testGetFloatValue()
+    {
+        $this->markTestSkipped('Value Object not implemented yet');
+
+        // ACT
+        $result = $this->amountOfMoney->getFloatValue();
+
+        // ASSERT
+        $this->assertEquals(2.99, $result);
     }
 
     public function testToString()
     {
         $this->markTestSkipped('Value Object not implemented yet');
 
-        // ARRANGE
-        $money = Money::constructFromFloatValueInPounds(2.99001);
-
         // ACT
-        $result = (string) $money;
+        $result = (string) $this->amountOfMoney;
 
         // ASSERT
         $this->assertEquals('£2.99', $result);
-    }
-
-    public function testWithVatAdded()
-    {
-        $this->markTestSkipped('Value Object not implemented yet');
-
-        $money = Money::constructFromFloatValueInPounds(10.0);
-
-        $moneyPlusVat = $money->withVatAdded();
-
-        $this->assertEquals(10.0, $money->getFloatValue());
-        $this->assertEquals(12.0, $moneyPlusVat->getFloatValue());
     }
 }
