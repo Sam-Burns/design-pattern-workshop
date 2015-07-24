@@ -6,14 +6,18 @@ use PHPUnit_Framework_TestCase as TestCase;
 
 class FactoryPatternTest extends TestCase
 {
+    /** @var  NumberFactory */
+    private $numberFactory;
+
     public function testGettingEvenNumber()
     {
+        $this->markTestSkipped('Factory not implemented yet');
+
         // ARRANGE
-        $numberFactory = new NumberFactory();
         $numberAsInt = 2;
 
         // ACT
-        $result = $numberFactory->getNumberObjectForIntValue($numberAsInt);
+        $result = $this->numberFactory->getNumberObjectForIntValue($numberAsInt);
 
         // ASSERT
         $this->assertInstanceOf('\DesignPatterns\Factory\EvenNumber', $result);
@@ -22,12 +26,13 @@ class FactoryPatternTest extends TestCase
 
     public function testGettingOddNumber()
     {
+        $this->markTestSkipped('Factory not implemented yet');
+
         // ARRANGE
-        $numberFactory = new NumberFactory();
         $numberAsInt = 1;
 
         // ACT
-        $result = $numberFactory->getNumberObjectForIntValue($numberAsInt);
+        $result = $this->numberFactory->getNumberObjectForIntValue($numberAsInt);
 
         // ASSERT
         $this->assertInstanceOf('\DesignPatterns\Factory\OddNumber', $result);
