@@ -9,6 +9,10 @@ class NumberFactory
      */
     public function getNumberObjectForIntValue($intValue)
     {
-        // @todo
+        if ($intValue % 2) {
+            return new OddNumber($intValue);
+        } else {
+            return new EvenNumber($intValue);
+        }
     }
 }
