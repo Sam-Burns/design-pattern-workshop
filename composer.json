@@ -11,7 +11,7 @@
         "psr-4": {
             "DesignPatterns\\Factory\\":             "patterns/01_Factory/src",
             "DesignPatterns\\Builder\\":             "patterns/02_Builder/src",
-            "DesignPatterns\\DependencyInjection\\": "patterns/03_Dependency_Injection/src",
+            "DesignPatterns\\DependencyInjection\\": "patterns/03_Dependency_Injection/src"
         }
     }
 }
