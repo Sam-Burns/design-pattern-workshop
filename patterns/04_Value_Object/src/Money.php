@@ -15,7 +15,7 @@ class Money
      */
     public static function constructFromString($moneyAsString)
     {
-
+        // @todo
     }
 
     /**
@@ -24,7 +24,7 @@ class Money
      */
     public static function constructFromFloatValueInPounds($floatValue)
     {
-
+        // @todo
     }
 
     /**
@@ -32,7 +32,7 @@ class Money
      */
     public function getCurrencySymbol()
     {
-        return '$';
+        // @todo
     }
 
     /**
@@ -40,7 +40,7 @@ class Money
      */
     public function getFloatValue()
     {
-        return 0.0;
+        // @todo
     }
 
     /**
@@ -48,7 +48,7 @@ class Money
      */
     public function __toString()
     {
-        return '';
+        // @todo
     }
 
     /**
@@ -56,6 +56,6 @@ class Money
      */
     public function withVatAdded()
     {
-
+        // @todo
     }
 }
