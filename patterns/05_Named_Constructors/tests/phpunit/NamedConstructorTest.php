@@ -18,7 +18,7 @@ class NamedConstructorTest extends TestCase
         $result = Money::constructFromString('£2.99');
 
         // ASSERT
-        $this->assertInstanceOf('\DesignPatterns\ValueObject\Money', $result);
+        $this->assertInstanceOf('\DesignPatterns\NamedConstructor\Money', $result);
         $this->assertEquals($expectedFloatValue, $result->getFloatValue());
         $this->assertEquals($expectedCurrencySymbol, $result->getCurrencySymbol());
     }
@@ -35,7 +35,7 @@ class NamedConstructorTest extends TestCase
         $result = Money::constructFromFloatValueInPounds(2.99);
 
         // ASSERT
-        $this->assertInstanceOf('\DesignPatterns\ValueObject\Money', $result);
+        $this->assertInstanceOf('\DesignPatterns\NamedConstructor\Money', $result);
         $this->assertEquals($expectedFloatValue, $result->getFloatValue());
         $this->assertEquals($expectedCurrencySymbol, $result->getCurrencySymbol());
     }
