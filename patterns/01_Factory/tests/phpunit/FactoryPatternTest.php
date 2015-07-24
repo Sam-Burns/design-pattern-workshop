@@ -9,6 +9,11 @@ class FactoryPatternTest extends TestCase
     /** @var  NumberFactory */
     private $numberFactory;
 
+    public function setUp()
+    {
+        $this->numberFactory = new NumberFactory();
+    }
+
     public function testGettingEvenNumber()
     {
         $this->markTestSkipped('Factory not implemented yet');
