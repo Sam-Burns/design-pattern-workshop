@@ -5,6 +5,7 @@
             <directory>./patterns/01_Factory/tests/phpunit/</directory>
             <directory>./patterns/02_Builder/tests/phpunit/</directory>
             <directory>./patterns/03_Dependency_Injection/tests/phpunit/</directory>
+            <directory>./patterns/04_Value_Object/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
