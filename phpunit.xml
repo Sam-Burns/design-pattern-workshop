@@ -8,6 +8,7 @@
             <directory>./patterns/04_Value_Object/tests/phpunit/</directory>
             <directory>./patterns/05_Named_Constructors/tests/phpunit/</directory>
             <directory>./patterns/06_Immutability/tests/phpunit/</directory>
+            <directory>./patterns/07_Decorator/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
