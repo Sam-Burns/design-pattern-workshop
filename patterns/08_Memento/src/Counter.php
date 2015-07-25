@@ -16,11 +16,17 @@ class Counter
         // @todo Memento Pattern not implemented yet
     }
 
+    /**
+     * @return Memento
+     */
     public function createMemento()
     {
         // @todo Memento Pattern not implemented yet
     }
 
+    /**
+     * @param Memento $memento
+     */
     public function setMemento(Memento $memento)
     {
         // @todo Memento Pattern not implemented yet
