@@ -13,7 +13,7 @@ class Counter
      */
     public function getNextNumber()
     {
-        // @todo Memento Pattern not implemented yet
+        return ++$this->countedToSoFar;
     }
 
     /**
@@ -21,7 +21,7 @@ class Counter
      */
     public function createMemento()
     {
-        // @todo Memento Pattern not implemented yet
+        return new Memento($this->countedToSoFar);
     }
 
     /**
@@ -29,6 +29,6 @@ class Counter
      */
     public function setMemento(Memento $memento)
     {
-        // @todo Memento Pattern not implemented yet
+        $this->countedToSoFar = $memento->getCountValue();
     }
 }
