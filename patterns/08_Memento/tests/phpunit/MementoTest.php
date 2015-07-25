@@ -9,8 +9,6 @@ class MementoTest extends TestCase
 {
     public function testMementoPattern()
     {
-        $this->markTestSkipped('Memento pattern not implemented yet');
-
         // ARRANGE
         $caretaker = new Caretaker();
         $counter = new Counter();
