@@ -23,6 +23,6 @@ class DataGetterBuilder
      */
     public function buildObjectGraphWithNoCacheDecorator()
     {
-        // @todo Implement
+        return new DataFromFileGetter();
     }
 }
