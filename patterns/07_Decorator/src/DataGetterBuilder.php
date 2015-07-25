@@ -10,4 +10,12 @@ class DataGetterBuilder
     {
         // @todo Implement
     }
+
+    /**
+     * @return DataGetter
+     */
+    public function buildObjectGraphWithNoCacheDecorator()
+    {
+        // @todo Implement
+    }
 }

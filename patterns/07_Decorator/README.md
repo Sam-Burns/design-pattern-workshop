@@ -16,3 +16,7 @@ data is available; if not, it will come from a JSON file on disk.
 Use a Builder Pattern to assemble the object graph in the correct way.  You can do this by editing one function in the
 DataGetterBuilder class.  Once you have wired up the object graph correctly, the PHPUnit integration test provided
 should pass.
+
+You will also need to build a different object graph, with the service implementing the same interface, but with caching
+disabled.  Notice that you are changing the behaviour of the service through dependency configuration alone, with no
+code changes to anything other than the builder.
