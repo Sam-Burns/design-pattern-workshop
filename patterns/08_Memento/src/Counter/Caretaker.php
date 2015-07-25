@@ -21,16 +21,24 @@ class Caretaker
         // Save state
         $memento = $counter->createMemento();
 
-        // Get some more numbers
-        $output[] = $counter->getNextNumber(); // 4
-        $output[] = $counter->getNextNumber(); // 5
+        try {
 
-        // Revert to saved state
-        $counter->setMemento($memento);
+            // Get some more numbers
+            $output[] = $counter->getNextNumber(); // 4
+            $output[] = $counter->getNextNumber(); // 5
 
-        // Get some more numbers
-        $output[] = $counter->getNextNumber(); // 4
-        $output[] = $counter->getNextNumber(); // 5
+            // Error condition
+            throw new \Exception();
+
+        } catch (\Exception $exception) {
+
+            // Revert to saved state
+            $counter->setMemento($memento);
+
+            // Get some more numbers
+            $output[] = $counter->getNextNumber(); // 4
+            $output[] = $counter->getNextNumber(); // 5
+        }
 
         return $output;
     }
