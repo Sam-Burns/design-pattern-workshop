@@ -21,6 +21,8 @@ class DependencyInjectionTest extends TestCase
     {
         // @todo If you can...
 
+        $this->markTestSkipped('DI exercise not implemented');
+
 //        $this->assertInstanceOf(
 //            '\DesignPatterns\DependencyInjection\DependencyManagementApproach\ConstructorInjection',
 //            $object
@@ -32,6 +34,8 @@ class DependencyInjectionTest extends TestCase
     public function testClassWithSetterInjection()
     {
         // @todo If you can...
+
+        $this->markTestSkipped('DI exercise not implemented');
 
 //        $this->assertInstanceOf(
 //            '\DesignPatterns\DependencyInjection\DependencyManagementApproach\SetterInjection',
@@ -45,6 +49,8 @@ class DependencyInjectionTest extends TestCase
     {
         // @todo If you can...
 
+        $this->markTestSkipped('DI exercise not implemented');
+
 //        $this->assertInstanceOf(
 //            '\DesignPatterns\DependencyInjection\DependencyManagementApproach\InlineInstantiation',
 //            $object
@@ -56,6 +62,8 @@ class DependencyInjectionTest extends TestCase
     public function testClassWithInlineSingletonAccess()
     {
         // @todo If you can...
+
+        $this->markTestSkipped('DI exercise not implemented');
 
 //        $this->assertInstanceOf(
 //            '\DesignPatterns\DependencyInjection\DependencyManagementApproach\InlineSingletonAccess',
