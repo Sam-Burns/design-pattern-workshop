@@ -7,24 +7,31 @@ class Caretaker
 {
     /**
      * @param Counter $counter
-     * @return string[]
+     * @return int[]
      */
     public function doSomeCounting(Counter $counter)
     {
         $output = [];
 
+        // Get some numbers
         $output[] = $counter->getNextNumber(); // 1
         $output[] = $counter->getNextNumber(); // 2
         $output[] = $counter->getNextNumber(); // 3
 
+        // Save state
         $memento = $counter->createMemento();
 
+        // Get some more numbers
         $output[] = $counter->getNextNumber(); // 4
         $output[] = $counter->getNextNumber(); // 5
 
+        // Revert to saved state
         $counter->setMemento($memento);
 
+        // Get some more numbers
         $output[] = $counter->getNextNumber(); // 4
         $output[] = $counter->getNextNumber(); // 5
+
+        return $output;
     }
 }
