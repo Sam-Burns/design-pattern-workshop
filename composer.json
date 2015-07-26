@@ -18,7 +18,8 @@
             "DesignPatterns\\Decorator\\":           "patterns/07_Decorator/src",
             "DesignPatterns\\Memento\\":             "patterns/08_Memento/src",
             "DesignPatterns\\PubSub\\":              "patterns/09_PubSub/src",
-            "DesignPatterns\\Observer\\":            "patterns/10_Observer/src"
+            "DesignPatterns\\Observer\\":            "patterns/10_Observer/src",
+            "DesignPatterns\\Visitor \\":            "patterns/11_Visitor/src"
         }
     }
 }

@@ -1,0 +1,32 @@
+<?php
+namespace DesignPatterns\Visitor\Test;
+
+use DesignPatterns\Visitor\ListOfNumbers;
+use DesignPatterns\Visitor\Visitor\PrimeDeleter;
+use DesignPatterns\Visitor\Visitor\SquareDeleter;
+use DesignPatterns\Visitor\Visitor;
+use PHPUnit_Framework_TestCase as TestCase;
+
+class VisitorTest extends TestCase
+{
+    public function testVisitorPattern()
+    {
+        $this->markTestSkipped('Visitor Pattern not implemented');
+
+        // ARRANGE
+        $subject = new ListOfNumbers(1, 20);
+        $visitors = [new PrimeDeleter(), new SquareDeleter()];
+
+        // ACT
+        foreach ($visitors as $visitor) {
+            /** @var $visitor Visitor */
+            $visitor->visit($subject);
+        }
+
+        // ASSERT
+        $this->assertEquals(
+            [5, 6, 8, 10, 12, 14, 18, 20],
+            $subject->getNumbersNotYetDeleted()
+        );
+    }
+}
