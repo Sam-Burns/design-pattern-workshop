@@ -19,13 +19,14 @@ class PubSubTest extends TestCase
      */
     private function registerPublishersAndSubscribers(EventBus $eventBus, $publishers, $subscribers)
     {
-        // @todo Pub/Sub Pattern test not implemented yet
+        $eventBus->registerSubscriber(Message::MESSAGE_TOPIC_PRIME, $subscribers[0]);
+        $eventBus->registerSubscriber(Message::MESSAGE_TOPIC_SQUARE,  $subscribers[1]);
+
+        $eventBus->registerPublisher($publishers[0]);
     }
 
     public function testPubSub()
     {
-        $this->markTestSkipped('Pub/Sub Pattern tests not implemented yet');
-
         // ARRANGE
 
         // Create objects for design pattern
