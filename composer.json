@@ -16,7 +16,8 @@
             "DesignPatterns\\NamedConstructor\\":    "patterns/05_Named_Constructors/src",
             "DesignPatterns\\Immutability\\":        "patterns/06_Immutability/src",
             "DesignPatterns\\Decorator\\":           "patterns/07_Decorator/src",
-            "DesignPatterns\\Memento\\":             "patterns/08_Memento/src"
+            "DesignPatterns\\Memento\\":             "patterns/08_Memento/src",
+            "DesignPatterns\\PubSub\\":              "patterns/09_PubSub/src"
         }
     }
 }

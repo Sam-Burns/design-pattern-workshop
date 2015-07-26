@@ -10,6 +10,7 @@
             <directory>./patterns/06_Immutability/tests/phpunit/</directory>
             <directory>./patterns/07_Decorator/tests/phpunit/</directory>
             <directory>./patterns/08_Memento/tests/phpunit/</directory>
+            <directory>./patterns/09_PubSub/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
