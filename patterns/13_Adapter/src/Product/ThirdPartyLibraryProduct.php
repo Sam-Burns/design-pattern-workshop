@@ -12,10 +12,34 @@ class ThirdPartyLibraryProduct
     }
 
     /**
+     * @return int
+     */
+    public function getNumberInStock()
+    {
+        return 12;
+    }
+
+    /**
      * @return float
      */
     public function getPriceWithVat()
     {
         return 4.20;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return 'Sausages';
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return 'Some sausages';
     }
 }
