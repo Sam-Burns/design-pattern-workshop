@@ -23,7 +23,7 @@ class Tweeter
     }
 
     /**
-     * @param $tweetText
+     * @param string $tweetText
      */
     public function notifyObservers($tweetText)
     {
