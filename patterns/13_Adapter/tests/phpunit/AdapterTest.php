@@ -24,7 +24,7 @@ class AdapterTest extends TestCase
         $result = $this->product->getPrice();
 
         // ASSERT
-        $this->assertEquals(3.20, $result);
+        $this->assertEquals(4.20, $result);
     }
 
     public function testGetPriceWithoutVat()
@@ -35,6 +35,6 @@ class AdapterTest extends TestCase
         $result = $this->product->getPriceWithoutVat();
 
         // ASSERT
-        $this->assertEquals(2.50, $result);
+        $this->assertEquals(3.50, $result);
     }
 }
