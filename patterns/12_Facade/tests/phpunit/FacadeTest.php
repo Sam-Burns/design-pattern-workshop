@@ -25,8 +25,6 @@ class FacadeTest extends TestCase
 
     public function testAdding()
     {
-        $this->markTestSkipped('Facade Pattern not implemented yet');
-
         // ACT
         $result = $this->mathsFacade->add(1, 5);
 
@@ -36,8 +34,6 @@ class FacadeTest extends TestCase
 
     public function testSubtracting()
     {
-        $this->markTestSkipped('Facade Pattern not implemented yet');
-
         // ACT
         $result = $this->mathsFacade->subtract(3, 2);
 
@@ -47,8 +43,6 @@ class FacadeTest extends TestCase
 
     public function testMultiplying()
     {
-        $this->markTestSkipped('Facade Pattern not implemented yet');
-
         // ACT
         $result = $this->mathsFacade->multiply(5, 2);
 
@@ -58,8 +52,6 @@ class FacadeTest extends TestCase
 
     public function testDividing()
     {
-        $this->markTestSkipped('Facade Pattern not implemented yet');
-
         // ACT
         $result = $this->mathsFacade->divide(6, 3);
 

@@ -41,7 +41,7 @@ class MathsFacade
      */
     public function add($int1, $int2)
     {
-        // @todo Implement Facade Pattern
+        return $this->adder->add($int1, $int2);
     }
 
     /**
@@ -51,7 +51,7 @@ class MathsFacade
      */
     public function subtract($int1, $int2)
     {
-        // @todo Implement Facade Pattern
+        return $this->subtractor->subtract($int1, $int2);
     }
 
     /**
@@ -61,7 +61,7 @@ class MathsFacade
      */
     public function multiply($int1, $int2)
     {
-        // @todo Implement Facade Pattern
+        return $this->multiplier->multiply($int1, $int2);
     }
 
     /**
@@ -71,6 +71,6 @@ class MathsFacade
      */
     public function divide($int1, $int2)
     {
-        // @todo Implement Facade Pattern
+        return $this->divider->divide($int1, $int2);
     }
 }
