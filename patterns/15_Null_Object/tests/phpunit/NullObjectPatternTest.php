@@ -24,7 +24,6 @@ class NullObjectPatternTest extends TestCase
      */
     private function getClassThatDoesLogging()
     {
-        // @todo Alter this object graph
         $logger = new NullLogger();
         return new ClassThatDoesLogging($logger);
     }
