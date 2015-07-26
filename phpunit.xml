@@ -13,6 +13,7 @@
             <directory>./patterns/09_PubSub/tests/phpunit/</directory>
             <directory>./patterns/10_Observer/tests/phpunit/</directory>
             <directory>./patterns/11_Visitor/tests/phpunit/</directory>
+            <directory>./patterns/12_Facade/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 
