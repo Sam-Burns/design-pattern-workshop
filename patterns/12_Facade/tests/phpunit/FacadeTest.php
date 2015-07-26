@@ -39,7 +39,7 @@ class FacadeTest extends TestCase
         $this->markTestSkipped('Facade Pattern not implemented yet');
 
         // ACT
-        $result = $this->mathsFacade->sub(3, 2);
+        $result = $this->mathsFacade->subtract(3, 2);
 
         // ASSERT
         $this->assertEquals(1, $result);
