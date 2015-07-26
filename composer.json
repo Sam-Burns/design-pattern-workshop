@@ -23,7 +23,7 @@
             "DesignPatterns\\Facade\\":              "patterns/12_Facade/src",
             "DesignPatterns\\Adapter\\":             "patterns/13_Adapter/src",
             "DesignPatterns\\Prototype\\":           "patterns/14_Prototype/src",
-            "DesignPatterns\\Prototype\\":           "patterns/15_Null_Object/src"
+            "DesignPatterns\\NullObject\\":          "patterns/15_Null_Object/src"
         }
     }
 }
