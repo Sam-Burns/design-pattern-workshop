@@ -15,6 +15,7 @@
             <directory>./patterns/11_Visitor/tests/phpunit/</directory>
             <directory>./patterns/12_Facade/tests/phpunit/</directory>
             <directory>./patterns/13_Adapter/tests/phpunit/</directory>
+            <directory>./patterns/14_Prototype/tests/phpunit/</directory>
         </testsuite>
     </testsuites>
 

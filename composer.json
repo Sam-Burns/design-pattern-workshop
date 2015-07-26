@@ -21,7 +21,8 @@
             "DesignPatterns\\Observer\\":            "patterns/10_Observer/src",
             "DesignPatterns\\Visitor\\":             "patterns/11_Visitor/src",
             "DesignPatterns\\Facade\\":              "patterns/12_Facade/src",
-            "DesignPatterns\\Adapter\\":             "patterns/13_Adapter/src"
+            "DesignPatterns\\Adapter\\":             "patterns/13_Adapter/src",
+            "DesignPatterns\\Prototype\\":           "patterns/14_Prototype/src"
         }
     }
 }
