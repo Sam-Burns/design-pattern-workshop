@@ -13,7 +13,7 @@ class ListOfNumbers
     public function __construct($min, $max)
     {
         for ($int = $min; $int <= $max; $int++) {
-            $this->numbersNotDeleted[] = $int;
+            $this->numbersNotDeleted[$int] = $int;
         }
     }
 
@@ -22,7 +22,7 @@ class ListOfNumbers
      */
     public function deleteNumber($numberToDelete)
     {
-        unset($this->numbersNotDeleted[$numberToDelete]);
+        $this->numbersNotDeleted[$numberToDelete] = null;
     }
 
     /**
@@ -30,6 +30,12 @@ class ListOfNumbers
      */
     public function getNumbersNotYetDeleted()
     {
-        return array_values($this->numbersNotDeleted);
+        $filteredArray = array_filter(
+            $this->numbersNotDeleted,
+            function ($number) {
+                return $number !== null;
+            }
+        );
+        return array_values($filteredArray);
     }
 }

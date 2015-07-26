@@ -25,7 +25,7 @@ class VisitorTest extends TestCase
 
         // ASSERT
         $this->assertEquals(
-            [5, 6, 8, 10, 12, 14, 18, 20],
+            [6, 8, 10, 12, 14, 15, 18, 20],
             $subject->getNumbersNotYetDeleted()
         );
     }
