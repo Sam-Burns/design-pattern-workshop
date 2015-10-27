@@ -8,8 +8,6 @@ class NamedConstructorTest extends TestCase
 {
     public function testConstructionFromString()
     {
-        $this->markTestSkipped('Named Constructors not implemented yet');
-
         // ARRANGE
         $expectedFloatValue = 2.99;
         $expectedCurrencySymbol = '£';
@@ -25,7 +23,6 @@ class NamedConstructorTest extends TestCase
 
     public function testConstructionFromFloatValueInPounds()
     {
-        $this->markTestSkipped('Named Constructors not implemented yet');
 
         // ARRANGE
         $expectedFloatValue = 2.99;
