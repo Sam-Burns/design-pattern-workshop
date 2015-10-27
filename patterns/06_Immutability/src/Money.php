@@ -72,6 +72,6 @@ class Money
      */
     public function withVatAdded()
     {
-        // @todo
+        return new Money($this->floatValue + ($this->floatValue * 0.2), $this->currencySymbol);
     }
 }
