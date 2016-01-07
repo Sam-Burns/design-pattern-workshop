@@ -16,7 +16,7 @@ class FactoryPatternTest extends TestCase
 
     public function testGettingEvenNumber()
     {
-        $this->markTestSkipped('Factory not implemented yet');
+        //$this->markTestSkipped('Factory not implemented yet');
 
         // ARRANGE
         $numberAsInt = 2;
@@ -31,7 +31,7 @@ class FactoryPatternTest extends TestCase
 
     public function testGettingOddNumber()
     {
-        $this->markTestSkipped('Factory not implemented yet');
+        //$this->markTestSkipped('Factory not implemented yet');
 
         // ARRANGE
         $numberAsInt = 1;
