@@ -16,7 +16,7 @@ class PubBuilder
     {
         $pub = new Pub($numberOfTables, $staff->getBarman());
         $pub->setPubsign($pubSign);
-        
+
         return $pub;
     }
 }
