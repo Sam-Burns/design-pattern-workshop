@@ -73,5 +73,10 @@ class Money
     public function withVatAdded()
     {
         // @todo
+        $plusVat = new self(
+            $this->getFloatValue() * 1.2,
+            $this->getCurrencySymbol()
+        );
+        return $plusVat;
     }
 }
