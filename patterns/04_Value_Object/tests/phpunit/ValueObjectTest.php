@@ -16,7 +16,7 @@ class ValueObjectTest extends TestCase
 
     public function testGetCurrencySymbol()
     {
-        $this->markTestSkipped('Value Object not implemented yet');
+        //$this->markTestSkipped('Value Object not implemented yet');
 
         // ACT
         $result = $this->amountOfMoney->getCurrencySymbol();
@@ -27,7 +27,7 @@ class ValueObjectTest extends TestCase
 
     public function testGetFloatValue()
     {
-        $this->markTestSkipped('Value Object not implemented yet');
+        //$this->markTestSkipped('Value Object not implemented yet');
 
         // ACT
         $result = $this->amountOfMoney->getFloatValue();
@@ -38,7 +38,7 @@ class ValueObjectTest extends TestCase
 
     public function testToString()
     {
-        $this->markTestSkipped('Value Object not implemented yet');
+        //$this->markTestSkipped('Value Object not implemented yet');
 
         // ACT
         $result = (string) $this->amountOfMoney;

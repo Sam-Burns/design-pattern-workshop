@@ -78,7 +78,7 @@ class DependencyInjectionTest extends TestCase
         // @todo If you can...
 
         $this->markTestSkipped('DI exercise not implemented');
-        
+
         $object = new InlineSingletonAccess();
         $object->retrieveDependencies();
 
