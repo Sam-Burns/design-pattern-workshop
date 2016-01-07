@@ -1,6 +1,10 @@
 <?php
 namespace DesignPatterns\Decorator;
 
+use DesignPatterns\Decorator\DataGetter\DataGetterCacheDecorator;
+use DesignPatterns\Decorator\Caching\InMemoryCache;
+use DesignPatterns\Decorator\DataGetter\DataFromFileGetter;
+
 class DataGetterBuilder
 {
     /**
@@ -8,7 +12,11 @@ class DataGetterBuilder
      */
     public function buildDecoratorPatternObjectGraph()
     {
-        // @todo Implement
+        $cacheAdapter = new InMemoryCache();
+
+        $nextSource = new DataFromFileGetter();
+        $dataGetter = new DataGetterCacheDecorator($nextSource, $cacheAdapter);
+        return $dataGetter;
     }
 
     /**
@@ -17,5 +25,7 @@ class DataGetterBuilder
     public function buildObjectGraphWithNoCacheDecorator()
     {
         // @todo Implement
+        $dataGetter = new DataFromFileGetter();
+        return $dataGetter;
     }
 }
