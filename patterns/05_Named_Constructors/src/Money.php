@@ -25,7 +25,22 @@ class Money
      */
     public static function constructFromString($moneyAsString)
     {
-        // @todo
+//        $result =  str_split($moneyAsString);
+//
+//        $poundSign = $result[0];
+//
+//        array_shift($result);
+
+//        return new Money(implode($result), $poundSign);
+
+        $matches = [];
+
+        preg_match('/^(.*?)(\d+\.\d+)/', $moneyAsString, $matches);
+
+        $curr = $matches[1];
+        $value = $matches[2];
+
+        return new Money($value, $curr);
     }
 
     /**
@@ -34,7 +49,7 @@ class Money
      */
     public static function constructFromFloatValueInPounds($floatValue)
     {
-        // @todo
+        return new Money($floatValue, '£');
     }
 
     /**
