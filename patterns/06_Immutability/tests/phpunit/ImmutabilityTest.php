@@ -8,7 +8,7 @@ class ImmutabilityTest extends TestCase
 {
     public function testWithVatAdded()
     {
-        $this->markTestSkipped('Immutability not implemented yet');
+        //$this->markTestSkipped('Immutability not implemented yet');
 
         // ARRANGE
         $money = Money::constructFromFloatValueInPounds(10.0);
