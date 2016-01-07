@@ -11,8 +11,6 @@ class BuilderPatternTest extends TestCase
 {
     public function testGettingPub()
     {
-        $this->markTestSkipped('Builder pattern not implemented yet');
-
         // ARRANGE
         $pubBuilder = new PubBuilder();
 
