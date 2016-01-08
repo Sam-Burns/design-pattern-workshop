@@ -19,12 +19,24 @@ class PubSubTest extends TestCase
      */
     private function registerPublishersAndSubscribers(EventBus $eventBus, $publishers, $subscribers)
     {
-        // @todo Pub/Sub Pattern test not implemented yet
+        foreach ($publishers as $publisher)
+        {
+            $publisher->registerEventBus($eventBus);
+        }
+
+        foreach ($subscribers as $subscriber)
+        {
+            if($subscriber instanceof PrimeNumberSubscriber)
+                $eventBus->registerSubscriber(Message::MESSAGE_TOPIC_PRIME, $subscriber);
+
+            if($subscriber instanceof SquareNumberSubscriber)
+                $eventBus->registerSubscriber(Message::MESSAGE_TOPIC_SQUARE, $subscriber);
+        }
     }
 
     public function testPubSub()
     {
-        $this->markTestSkipped('Pub/Sub Pattern tests not implemented yet');
+       // $this->markTestSkipped('Pub/Sub Pattern tests not implemented yet');
 
         // ARRANGE
 
