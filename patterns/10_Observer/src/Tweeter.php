@@ -19,7 +19,7 @@ class Tweeter
      */
     public function registerObserver(Observer $observer)
     {
-        // @todo Implement Observer Pattern
+        $this->observers[] = $observer;
     }
 
     /**
@@ -27,6 +27,9 @@ class Tweeter
      */
     public function notifyObservers($tweetText)
     {
-        // @todo Implement Observer Pattern
+        foreach ($this->observers as $observer)
+        {
+            $observer->notify($tweetText);
+        }
     }
 }

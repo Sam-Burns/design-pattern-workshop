@@ -9,8 +9,6 @@ class ObserverTest extends TestCase
 {
     public function testObserverPattern()
     {
-        $this->markTestSkipped('Observer Pattern not implemented yet.');
-
         // ARRANGE
         $tweeter = new Tweeter();
         $follower = new Follower();
