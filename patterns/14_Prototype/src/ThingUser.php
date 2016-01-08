@@ -35,6 +35,12 @@ class ThingUser
      */
     private function getOneThousandThings()
     {
-        // @todo Implement Prototype Pattern
+        $things = [];
+
+        for ($count = 0; $count < 1000; ++$count) {
+            $things[] = clone $this->prototypeThing;
+        }
+
+        return $things;
     }
 }
