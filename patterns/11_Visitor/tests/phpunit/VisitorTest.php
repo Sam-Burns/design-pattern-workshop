@@ -11,8 +11,6 @@ class VisitorTest extends TestCase
 {
     public function testVisitorPattern()
     {
-        $this->markTestSkipped('Visitor Pattern not implemented');
-
         // ARRANGE
         $subject = new ListOfNumbers(1, 20);
         $visitors = [new PrimeDeleter(), new SquareDeleter()];
