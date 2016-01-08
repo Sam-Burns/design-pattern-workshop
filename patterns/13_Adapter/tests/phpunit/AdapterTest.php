@@ -18,8 +18,6 @@ class AdapterTest extends TestCase
 
     public function testGetPrice()
     {
-        $this->markTestSkipped('Adapter Pattern not implemented yet.');
-
         // ACT
         $result = $this->product->getPrice();
 
@@ -29,8 +27,6 @@ class AdapterTest extends TestCase
 
     public function testGetPriceWithoutVat()
     {
-        $this->markTestSkipped('Adapter Pattern not implemented yet.');
-
         // ACT
         $result = $this->product->getPriceWithoutVat();
 
