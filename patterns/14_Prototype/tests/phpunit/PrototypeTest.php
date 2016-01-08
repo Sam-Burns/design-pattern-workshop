@@ -9,8 +9,6 @@ class PrototypeTest extends TestCase
 {
     public function testPrototypePattern()
     {
-        $this->markTestSkipped('Prototype Pattern not implemented yet');
-
         // ARRANGE
         $prototypeThing = new Thing();
         $thingUser = new ThingUser($prototypeThing);
