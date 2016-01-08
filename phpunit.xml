@@ -1,4 +1,4 @@
-<phpunit convertErrorsToExceptions="true" colors="true">
+<phpunit convertErrorsToExceptions="true" colors="true" bootstrap="./vendor/autoload.php">
 
     <testsuites>
         <testsuite name="All">
