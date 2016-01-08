@@ -11,7 +11,13 @@ class PrimeDeleter implements Visitor
      */
     public function visit(ListOfNumbers $listOfNumbers)
     {
-        // @todo Implement Visitor Pattern
+        $numbers = $listOfNumbers->getNumbersNotYetDeleted();
+
+        foreach ($numbers as $number)
+        {
+            if($this->isPrime($number))
+                $listOfNumbers->deleteNumber($number);
+        }
     }
 
     /**
