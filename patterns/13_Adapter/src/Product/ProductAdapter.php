@@ -21,7 +21,7 @@ class ProductAdapter implements Product
      */
     public function getPrice()
     {
-        // @todo Implement Adapter Pattern
+        return $this->thirdPartyLibraryProduct->getPriceWithVat();
     }
 
     /**
@@ -29,6 +29,6 @@ class ProductAdapter implements Product
      */
     public function getPriceWithoutVat()
     {
-        // @todo Implement Adapter Pattern
+        return $this->thirdPartyLibraryProduct->getPrice();
     }
 }
