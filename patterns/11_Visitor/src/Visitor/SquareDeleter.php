@@ -11,7 +11,14 @@ class SquareDeleter implements Visitor
      */
     public function visit(ListOfNumbers $listOfNumbers)
     {
-        // @todo Implement Visitor Pattern
+        // Walk through listOfNumbers array
+        foreach ($listOfNumbers->getNumbersNotYetDeleted() as $number) {
+            // Check if the number is a square
+            if ($this->isSquare($number)) {
+                // Delete the number
+                $listOfNumbers->deleteNumber($number);
+            }
+        }
     }
 
     /**
