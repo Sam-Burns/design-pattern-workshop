@@ -28,7 +28,7 @@ class NullObjectPatternTest extends TestCase
         // Altered the object graph
         //$logger = new FileLogger();
         $logger = new NullLogger();
-        
+
         return new ClassThatDoesLogging($logger);
     }
 }
