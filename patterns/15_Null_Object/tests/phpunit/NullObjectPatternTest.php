@@ -3,14 +3,13 @@ namespace DesignPatterns\NullObject\Test;
 
 use DesignPatterns\NullObject\ClassThatDoesLogging;
 use DesignPatterns\NullObject\Logger\FileLogger;
+use DesignPatterns\NullObject\Logger\NullLogger;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class NullObjectPatternTest extends TestCase
 {
     public function testCreationOfObjectGraph()
     {
-        $this->markTestSkipped('Null Object Pattern not implemented yet');
-
         // ARRANGE
         $classThatDoesLogging = $this->getClassThatDoesLogging();
 
@@ -26,8 +25,10 @@ class NullObjectPatternTest extends TestCase
      */
     private function getClassThatDoesLogging()
     {
-        // @todo Alter this object graph
-        $logger = new FileLogger();
+        // Altered the object graph
+        //$logger = new FileLogger();
+        $logger = new NullLogger();
+        
         return new ClassThatDoesLogging($logger);
     }
 }
