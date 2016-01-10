@@ -23,10 +23,6 @@ class DependencyInjectionTest extends TestCase
 
     public function testClassWithConstructorInjection()
     {
-        // @todo If you can...
-
-        //$this->markTestSkipped('DI exercise not implemented');
-
         $object = new ConstructorInjection($this->mockDependency);
 
         $this->assertInstanceOf(
@@ -39,10 +35,6 @@ class DependencyInjectionTest extends TestCase
 
     public function testClassWithSetterInjection()
     {
-        // @todo If you can...
-
-        //$this->markTestSkipped('DI exercise not implemented');
-
         $object = new SetterInjection();
 
         $this->assertInstanceOf(
